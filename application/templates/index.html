@@ -1,0 +1,35 @@
+{% extends "templates/layout.html" %}
+{% block title %} The Unnamed Project {% endblock %}
+{% block main %}
+
+<div class="container" style="margin: 10% auto;">
+  <div class="row my-5">
+    <div class="col-md-6">
+      <div class="w3-panel w3-leftbar">
+        <p class="w3-xxlarge w3-serif">
+          <i>"Never underestimate The Power of Stupid people in large group"</i></p>
+        <p>- Gorge Carlin</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="shadow p-5 mb-5 bg-white rounded">
+        <form class="form-inline" action="{{url_for('index')}}" , method="POST">
+          {{ indexform.csrf_token }}
+          <div class="form-group row">
+            {{ indexform.name.label(class="col-md-3 col-form-label") }}
+            <div class="col-md-8">
+              {{ indexform.name(class="form-control", placeholder="Enter your name")  }}
+            </div>
+            <div class="col-md-1">
+              {{ indexform.submit(class="btn btn-success") }}
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
