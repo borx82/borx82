@@ -11,8 +11,6 @@ import matplotlib.pyplot as plt
 import pickle
 from sqlalchemy import create_engine
 import os
-from jinja2 import Environment
-from jinja2.loaders import FileSystemLoader
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
