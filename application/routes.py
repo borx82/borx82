@@ -71,7 +71,7 @@ def analyze():
     else:
         name = "<i>'Random User'</i>"
     analyzerform = AnalyzerForm()
-    analyzerform.stock.choices = ['GME', 'Test']
+    analyzerform.stock.choices = ['AMC', 'NIO', 'AAPL', 'PLTR', 'GE', 'EDU', 'F', 'OCGN', 'BABA', 'AMD', 'FTEK', 'TSLA', 'WISH', 'BAC', 'ITUB', 'PALI', 'VALE', 'PLUG', 'IHT', 'UBER', 'FCX', 'RIOT', 'AAL', 'NOK', 'JD', 'MARA', 'PBR', 'X', 'GGB', 'BNGO', 'MSFT', 'INTC', 'XPEV', 'PTON', 'CCL', 'FCEL', 'T', 'FLR', 'TLRY', 'BBD', 'PFE', 'MRO', 'CLF', 'ET', 'XOM', 'DKNG', 'WFC', 'TME', 'SKLZ', 'NCLH', 'ARRY', 'IQ', 'SQ', 'OPEN', 'FUBO', 'RIG', 'VIAC', 'OXY', 'MU', 'ABEV', 'EXPR', 'SIRI', 'NNDM', 'AHT', 'C', 'FB', 'HBAN', 'RBLX', 'SOS', 'BA', 'SLB', 'SONO', 'M', 'WKHS', 'AMWL', 'CSCO', 'IDEX', 'CMCSA', 'KO', 'JPM', 'EBON', 'NLY', 'VIPS', 'FTCH', 'CPNG', 'SWN', 'TWTR', 'AMAT', 'PCG', 'NSA', 'SPCE', 'PINS', 'ZNGA', 'KGC', 'BB', 'KMI', 'GEVO', 'CCIV', 'UAL']
     return render_template("analyze.html", name=name, analyzerform=analyzerform)
 
 
