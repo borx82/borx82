@@ -11,6 +11,24 @@ import matplotlib.pyplot as plt
 import pickle
 from sqlalchemy import create_engine
 import os
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
+from pandas.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib
+import matplotlib.pyplot as plt
+import requests
+import json
+import nltk
+import time
+import praw
+import sklearn
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
